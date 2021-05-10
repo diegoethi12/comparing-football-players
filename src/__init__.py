@@ -9,5 +9,6 @@ logging.basicConfig(
 )
 
 SRC_PATH = Path(__file__).parent.absolute()
+DATA_PATH = SRC_PATH / 'data'
 
-__all__ = ['SRC_PATH']
+__all__ = ['SRC_PATH', 'DATA_PATH']
