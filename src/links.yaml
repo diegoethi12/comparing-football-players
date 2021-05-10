@@ -1,16 +1,16 @@
 big5:
-  2020:
-    standard: 'https://fbref.com/en/comps/Big5/stats/players/Big-5-European-Leagues-Stats#stats_standard'
-    goalkeeper: 'https://fbref.com/en/comps/Big5/keepers/players/Big-5-European-Leagues-Stats#stats_keeper'
-    goalkeeper_adv: 'https://fbref.com/en/comps/Big5/keepersadv/players/Big-5-European-Leagues-Stats#stats_keeper_adv'
-    shooting: 'https://fbref.com/en/comps/Big5/shooting/players/Big-5-European-Leagues-Stats#stats_shooting'
-    passing: 'https://fbref.com/en/comps/Big5/passing/players/Big-5-European-Leagues-Stats#stats_passing'
-    passing_types: 'https://fbref.com/en/comps/Big5/passing_types/players/Big-5-European-Leagues-Stats#stats_passing_types'
-    goal_and_shot_creation: 'https://fbref.com/en/comps/Big5/gca/players/Big-5-European-Leagues-Stats#stats_gca'
-    defense: 'https://fbref.com/en/comps/Big5/defense/players/Big-5-European-Leagues-Stats#stats_defense'
-    possession: 'https://fbref.com/en/comps/Big5/possession/players/Big-5-European-Leagues-Stats#stats_possession'
-    playing_time: 'https://fbref.com/en/comps/Big5/playingtime/players/Big-5-European-Leagues-Stats#stats_playing_time'
-    miscellaneous: 'https://fbref.com/en/comps/Big5/misc/players/Big-5-European-Leagues-Stats#stats_misc'
+  2019-2020:
+    standard: 'https://fbref.com/en/comps/Big5/2019-2020/stats/players/2019-2020-Big-5-European-Leagues-Stats#stats_standard'
+    goalkeeper: 'https://fbref.com/en/comps/Big5/2019-2020/keepers/players/2019-2020-Big-5-European-Leagues-Stats#stats_keeper'
+    goalkeeper_adv: 'https://fbref.com/en/comps/Big5/2019-2020/keepersadv/players/2019-2020-Big-5-European-Leagues-Stats#stats_keeper_adv'
+    shooting: 'https://fbref.com/en/comps/Big5/2019-2020/shooting/players/2019-2020-Big-5-European-Leagues-Stats#stats_shooting'
+    passing: 'https://fbref.com/en/comps/Big5/2019-2020/passing/players/2019-2020-Big-5-European-Leagues-Stats#stats_passing'
+    passing_types: 'https://fbref.com/en/comps/Big5/2019-2020/passing_types/players/2019-2020-Big-5-European-Leagues-Stats#stats_passing_types'
+    goal_and_shot_creation: 'https://fbref.com/en/comps/Big5/2019-2020/gca/players/2019-2020-Big-5-European-Leagues-Stats#stats_gca'
+    defense: 'https://fbref.com/en/comps/Big5/2019-2020/defense/players/2019-2020-Big-5-European-Leagues-Stats#stats_defense'
+    possession: 'https://fbref.com/en/comps/Big5/2019-2020/possession/players/2019-2020-Big-5-European-Leagues-Stats#stats_possession'
+    playing_time: 'https://fbref.com/en/comps/Big5/2019-2020/playingtime/players/2019-2020-Big-5-European-Leagues-Stats#stats_playing_time'
+    miscellaneous: 'https://fbref.com/en/comps/Big5/2019-2020/misc/players/2019-2020-Big-5-European-Leagues-Stats#stats_misc'
 
 
 

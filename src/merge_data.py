@@ -1,11 +1,11 @@
 import re
 import pandas as pd
 from pathlib import PosixPath
-from datetime import datetime
 import logging
 
 from src import SRC_PATH
 from src.utils.files import read_pickle
+from src.utils.dates import today_str
 
 
 def rename_unnamed_columns(dataframe: pd.DataFrame) -> pd.DataFrame:
@@ -33,7 +33,7 @@ def merge_data(path: PosixPath, columns: list) -> PosixPath:
 
     logging.info(f"Merging dataframes on: {', '.join(columns)}")
     df = pd.concat(dfs_dict.values(), axis=1)
-    file_name = f"players-df-{datetime.utcnow().strftime('%Y-%m-%d')}.pickle"
+    file_name = f"players-df-{today_str('%Y-%m-%d')}.pickle"
     file_path = SRC_PATH / 'data' / file_name
     df.to_pickle(file_path)
 
@@ -42,6 +42,6 @@ def merge_data(path: PosixPath, columns: list) -> PosixPath:
 
 if __name__ == '__main__':
     merge_data(
-        path=SRC_PATH / 'data' / 'metrics-dict-2021-04-22.pickle',
+        path=SRC_PATH / 'data' / 'metrics-dict-2019-2020-big5-2021-05-04.pickle',
         columns=['General - Player', 'General - Nation', 'General - Squad']
     )

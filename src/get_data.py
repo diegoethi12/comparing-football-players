@@ -1,11 +1,11 @@
 import pandas as pd
-from datetime import datetime
 import pickle
 import logging
 from pathlib import PosixPath
 
 from src import SRC_PATH
 from src.utils.files import read_yaml
+from src.utils.dates import today_str
 
 
 def read_html_and_log(url: str) -> pd.DataFrame:
@@ -21,12 +21,14 @@ def get_data(links_file: PosixPath) -> None:
     data_path = SRC_PATH / 'data'
     data_path.mkdir(exist_ok=True)
 
-    dfs = {key: read_html_and_log(link) for key, link in links['big5'][2020].items()}
+    for comp, comp_v in links.items():
+        for season, season_v in comp_v.items():
+            dfs = {key: read_html_and_log(link) for key, link in season_v.items()}
 
-    file_name = f"metrics-dict-{datetime.utcnow().strftime('%Y-%m-%d')}"
+            file_name = f"metrics-dict-{season}-{comp}-{today_str('%Y-%m-%d')}"
 
-    with open(f'{data_path}/{file_name}.pickle', 'wb') as handle:
-        pickle.dump(dfs, handle, protocol=pickle.HIGHEST_PROTOCOL)
+            with open(f'{data_path}/{file_name}.pickle', 'wb') as handle:
+                pickle.dump(dfs, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 if __name__ == '__main__':
