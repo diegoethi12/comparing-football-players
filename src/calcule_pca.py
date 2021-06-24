@@ -80,6 +80,7 @@ pca.fit(df_scaled)
 pca.explained_variance_
 pca.components_
 df_pca = pd.DataFrame(pca.transform(df_scaled))
+df_pca.columns = [f"PC{c+1}" for c in df_pca.columns]
 
 
 # Explained Variance
@@ -110,3 +111,6 @@ fig.show()
 # Save PCA model
 MODEL_PATH.mkdir(exist_ok=True)
 joblib.dump(pca, MODEL_PATH / 'pca.pickle')
+
+pca_transformed_df = pd.concat([df.reset_index(), df_pca], axis=1)
+pca_transformed_df.to_pickle(MODEL_PATH / 'pca_transformed_dataset.pickle')
