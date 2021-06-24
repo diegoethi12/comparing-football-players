@@ -1,5 +1,6 @@
-# Data
+# Data and models
 src/data
+src/models
 
 # PyCharm
 .idea
