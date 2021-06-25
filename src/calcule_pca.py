@@ -113,4 +113,4 @@ MODEL_PATH.mkdir(exist_ok=True)
 joblib.dump(pca, MODEL_PATH / 'pca.pickle')
 
 pca_transformed_df = pd.concat([df.reset_index(), df_pca], axis=1)
-pca_transformed_df.to_pickle(MODEL_PATH / 'pca_transformed_dataset.pickle')
+pca_transformed_df.to_pickle(DATA_PATH / 'pca_transformed_dataset.pickle')
